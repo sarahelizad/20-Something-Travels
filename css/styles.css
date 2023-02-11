@@ -1,0 +1,216 @@
+/* body */
+body {
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 300;
+}
+
+.colored-section {
+  background: rgb(250, 147, 151);
+  background: linear-gradient(90deg, rgba(250, 147, 151, 1) 0%, rgba(254, 120, 126, 1) 50%, rgba(250, 147, 151, 1) 100%);
+  color: #fff;
+}
+
+h1 {
+  color: #fa9397;
+  font-family: Indie Flower;
+  font-size: 4rem;
+}
+
+h3 {
+  color: gray;
+  font-size: 1.5rem;
+}
+
+/* Navigation Bar */
+.nav-item {
+  padding: 0 18px;
+}
+
+.navbar-brand {
+  padding-left: 20px;
+  font-family: Indie Flower;
+}
+
+/* Title */
+.container-fluid-title {
+  background-image: url("../images/main-hero.jpg");
+  background-size: cover;
+  text-align: center;
+  height: 100vh;
+}
+
+.hero-container {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.fa-solid {
+  color: #fa9397;
+  margin-top: 30px;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  transform-origin: top;
+}
+
+.fa-angle-down {
+  animation-name: fa-angle-down;
+  animation-timing-function: ease;
+}
+
+@keyframes fa-angle-down {
+  0% {
+    transform: translateY(0);
+  }
+
+  30% {
+    transform: translateY(20px);
+  }
+
+  50% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.img-container {
+  position: relative;
+}
+
+.hero1, .hero2, .hero3, .hero4 {
+  width: 30%;
+  position: absolute;
+  transform: rotate(25deg);
+  border-radius: 5px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.07),
+            0 2px 4px rgba(0,0,0,0.07),
+            0 4px 8px rgba(0,0,0,0.07),
+            0 8px 16px rgba(0,0,0,0.07),
+            0 16px 32px rgba(0,0,0,0.07),
+            0 32px 64px rgba(0,0,0,0.07);
+}
+
+.hero1 {
+  left: 250px;
+}
+
+.hero2 {
+  left: 150px;
+  top: 200px;
+}
+
+.hero3 {
+  right: 100px;
+  top: 50px;
+}
+
+.hero4 {
+  right: 200px;
+  top: 250px;
+}
+
+/* Explore Country and Topic */
+.card-title, .card-text {
+  color: gray;
+}
+
+.country-section-title, .topic-section-title {
+  padding: 20px 0 50px 0;
+}
+
+#explore-country, #explore-topic {
+  padding-bottom: 50px;
+}
+
+#explore-country .card {
+  box-shadow: 0 1px 1px rgba(0,0,0,0.11),
+              0 2px 2px rgba(0,0,0,0.11),
+              0 4px 4px rgba(0,0,0,0.11),
+              0 8px 8px rgba(0,0,0,0.11),
+              0 16px 16px rgba(0,0,0,0.11),
+              0 32px 32px rgba(0,0,0,0.11);
+}
+
+#explore-topic .card {
+  box-shadow: 0 1px 1px rgba(0,0,0,0.11),
+              0 2px 2px rgba(0,0,0,0.11),
+              0 4px 4px rgba(0,0,0,0.11),
+              0 8px 8px rgba(0,0,0,0.11),
+              0 16px 16px rgba(0,0,0,0.11),
+              0 32px 32px rgba(0,0,0,0.11);
+}
+
+/* About */
+.meet-guide-img {
+  max-width: 50%;
+  border-radius: 5px;
+}
+
+.about-me-container {
+  background: #fa9397;
+}
+
+.guide-section {
+  margin-top: 100px;
+}
+
+.about-me-text {
+  font-size: 20px;
+  padding-top: 20px;
+}
+
+/* Footer */
+#footer {
+  margin-top: 20px;
+}
+
+#footer .btn {
+  margin: 10px;
+}
+
+.fa-brands {
+  color: #fa9397;
+  padding: 20px 10px;
+}
+
+.copyright {
+  font-size: 0.75rem;
+}
+
+/* Media Queries */
+
+@media (max-width: 572px) {
+  .guide-section {
+    margin-top: 0px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 992px){
+  .guide-section {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .italy, .morocco, .nightlife {
+    margin-top: 10px;
+  }
+  #explore-topic .explore-column {
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .nightlife, .morocco {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .hero1, .hero2, .hero3, .hero4 {
+    display: none;
+  }
+}
